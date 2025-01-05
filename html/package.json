@@ -1,0 +1,24 @@
+{
+  "name": "uno-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.5",
+    "@iconify-json/ph": "^1.2.2",
+    "@julr/unocss-preset-forms": "^0.1.0",
+    "@unifydev/preset-ui": "./../../unify-preset/packages/preset-ui",
+    "typescript": "~5.6.2",
+    "unocss": "^0.65.3",
+    "unocss-preset-animations": "^1.1.0",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@flexilla/flexilla": "^2.0.7"
+  }
+}
