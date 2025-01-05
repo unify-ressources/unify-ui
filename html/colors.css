@@ -1,0 +1,45 @@
+:root {
+    /* Background colors */
+    --bg-body: 255 255 255;
+    --bg-lighter: 250 250 250;
+    --bg-light: 245 245 245;
+    --bg-high: 229 229 229;
+    --bg-higher: 212 212 212;
+
+    /* Foreground colors */
+    --fg-text: 55 65 81;
+    --fg-title: 23 23 23;
+    --fg-subtitle: 38 38 38;
+    --fg-subtext: 82 82 82;
+    --fg-light: 115 115 115;
+
+    /* Border colors */
+    --border: 229 229 229;
+    --border-light: 245 245 245;
+    --border-lighter: 250 250 250;
+    --border-high: 229 229 229;
+    --border-higher: 212 212 212;
+}
+
+.dark {
+    /* Background colors */
+    --bg-body: 3 7 18;
+    --bg-lighter: 17 24 39;
+    --bg-light: 17 24 39;
+    --bg-high: 31 41 55;
+    --bg-higher: 55 65 81;
+
+    /* Foreground colors */
+    --fg-text: 212 212 212;
+    --fg-title: 255 255 255;
+    --fg-subtitle: 243 244 246;
+    --fg-subtext: 156 163 175;
+    --fg-light: 115 115 115;
+
+    /* Border colors */
+    --border: 17 24 39;
+    --border-light: 17 24 39;
+    --border-lighter: 17 24 39;
+    --border-high: 31 41 55;
+    --border-higher: 55 65 81;
+}

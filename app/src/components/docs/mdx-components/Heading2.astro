@@ -1,9 +1,0 @@
----
-import type { HTMLAttributes} from "astro/types"
-type Props = HTMLAttributes<"h2">
-const {...rest} = Astro.props
----
-
-<h2 class="text-title scroll-mt26 first-mt0 mt12 text-lg font-medium" {...rest}>
-    <slot/>
-</h2>

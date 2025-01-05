@@ -1,2 +1,0 @@
-export { sidebarItems } from "./docSidebar"
-

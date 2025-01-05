@@ -22,10 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# development
-vite.config.js.*
-
-
-# system
-/reminder
