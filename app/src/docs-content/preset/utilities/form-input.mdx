@@ -1,0 +1,82 @@
+---
+title: Form Input Utilities
+description: Utility classes to customize Form Input
+---
+
+## Form Input
+
+To use it just add `form-input` utility class to your input, this class contains base styles.
+
+### Sizes
+
+The Input component supports the following sizes : `2xs`, `xs`, `sm`, `md`, `lg`, `xl`
+
+### Customize  style
+
+<BlockCode>
+```css
+--ui-input-focus-outline: your color ; /** When input focus */
+--ui-input-place-holder: your color; /** placeholder text-color */
+--ui-input-invalid-outline: your color; /**  When input invalid and focus */
+```
+</BlockCode>
+
+### Examples
+
+<BlockCode>
+```html
+<input type="text" class="form-input form-input-md">
+```
+</BlockCode>
+
+<Callout type="note">
+  Using form input utilities require having [@julr/unocss-preset-forms](https://github.com/Julien-R44/unocss-preset-forms) Preset installed.
+</Callout>
+
+
+## Input Checkbox
+
+<BlockCode>
+```html
+<input type="checkbox" class="form-input-checkbox">
+<input type="checkbox" class="form-input-checkbox-secondary">
+<input type="checkbox" class="form-input-checkbox-accent">
+```
+</BlockCode>
+
+### Style
+
+<BlockCode>
+```css
+--ui-checkbox-bg: your color ;
+--ui-checkbox-border: your color;
+--ui-ring-bg: your color;
+```
+</BlockCode>
+
+## Input Radio
+
+<BlockCode>
+```html
+<input type="radio" class="form-input-radio">
+<input type="radio" class="form-input-radio-secondary">
+<input type="radio" class="form-input-radio-accent">
+```
+</BlockCode>
+
+### Style
+
+<BlockCode>
+```css
+--ui-radio-bg: color here;
+```
+</BlockCode>
+
+## Input Range
+
+<BlockCode>
+```html
+<input ttype="range" class="form-input-range range-thumb-size-md range-track-bg-light range-thumb-bg-danger">
+```
+</BlockCode>
+

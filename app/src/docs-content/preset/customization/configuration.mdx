@@ -1,0 +1,75 @@
+---
+title: Configuration Guide for Preset UI
+description: Learn how to configure PresetUI to suit your project's needs.
+---
+
+While presetUI's configuration mainly focused on CSS Variable, there's some optional configurations but not realy required
+
+## Configuration
+
+<BlockCode>
+```js
+// uno.config.ts
+import { presetUI } from "@unifydev/preset-ui"
+
+export default defineConfig({
+  // ...config
+  presets: [
+    // ...other presets
+    presetUI({
+     	prefixDataStateVariant?: string,
+	    components?: Components,
+	    baseVariants?: BaseVariants,
+	    colorFormat?: "rgb" | "hex" | "hsl" | "oklch" | "none",
+    })
+  ],
+});
+```
+</BlockCode>
+
+### colorFormat
+
+This option tells PresetUI what color format you’re using for your project. By default, it is set to hsl. However, you can change it to match your preferred format.
+
+Options:
+- hsl (default)
+- rgb
+- hex
+- oklch
+- none (use this if you have multiple color formats in your project)
+
+<BlockCode>
+```js
+...
+	colorFormat: "none"
+...
+```
+</BlockCode>
+
+### prefixDataStateVariant
+
+This option allows you to customize the prefix for data-state variants. By default, it is set to fx-.
+
+- Default: fx-
+
+- Usage: All custom variants will start with the specified prefix
+
+Example 
+
+<BlockCode>
+```html
+<span data-state="active" class="fx-active:bg-red-400">
+  Active now
+</span>
+```
+</BlockCode>
+
+ If you want to change the prefix, you can do so like this:
+
+ <BlockCode>
+```js
+presetUI({
+  prefixDataStateVariant: 'custom-', // Now variants will start with `custom-`
+})
+```
+ </BlockCode>
