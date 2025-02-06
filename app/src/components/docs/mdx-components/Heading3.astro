@@ -1,0 +1,9 @@
+---
+import type { HTMLAttributes} from "astro/types"
+type Props = HTMLAttributes<"h3">
+const {...rest} = Astro.props
+---
+
+<h2 class="text-fg-title scroll-mt26 mt-8 first-mt0 font-medium" {...rest}>
+    <slot/>
+</h2>

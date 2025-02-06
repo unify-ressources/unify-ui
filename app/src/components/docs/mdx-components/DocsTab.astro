@@ -1,0 +1,47 @@
+---
+import type { HTMLAttributes } from "astro/types";
+type Props = {
+  values: string[];
+  docPanelClass?: string;
+} & HTMLAttributes<"div">;
+
+const { values, docPanelClass, ...rest } = Astro.props;
+---
+
+<div
+  data-tab-fx-site
+  data-fx-tabs
+  data-indicator-class-name="u-fx-tabs-indicator before-absolute before-bottom-0 before-content-empty before-h0.5 before-rd-full before-inset-x-0 before-bg-current text-fg-title"
+  class="mt5 first-mt0 grid"
+  {...rest}
+>
+  <ul
+    role="tablist"
+    data-tab-list
+    class="flex items-center gap-x3 b-b bdr_b-high relative text-fg-subtext font-medium"
+  >
+    {
+      values.map((value) => (
+        <li role="presentation" class="flex">
+          <a
+            data-tabs-trigger
+            data-target={value}
+            href={`#${value}`}
+            role="tab"
+            aria-controls={value}
+            aria-label={`${value}`}
+            class="flex disabled-cursor-not-allowed disabled-op80 px4 pt1.5 pb2.5 fx-active-text-fg-title outline-none focus-outline-0 focus-outline-transparent focus-visible-outline focus-visible-outline-primary600"
+          >
+            {value}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <div
+    data-panels-container
+    class={`pt5 wfull flex ${docPanelClass ? docPanelClass : ""}`}
+  >
+    <slot />
+  </div>
+</div>

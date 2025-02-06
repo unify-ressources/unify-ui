@@ -1,0 +1,32 @@
+---
+import type { MarkdownHeading } from "astro";
+import ScrollableY from "../base/ScrollableY.astro";
+import TableOfContent from "./TableOfContent.astro";
+import ContribDoc from "./ContribDoc.astro";
+type Props = {
+    headings: MarkdownHeading[];
+    fileName: string;
+    contribUrl: string;
+    discussionLink?:string
+}
+
+const { headings, fileName, contribUrl, discussionLink } = Astro.props;
+---
+
+<div
+    data-pagefind-ignore
+    data-table-of-content
+    class="box-tab-content tab-content-ui-bg tab-content-ui-states tab-content-ui flex overflow-hidden"
+>
+    <ScrollableY class="wfull p4">
+        <div class="gap-y-8 flex flex-col min-hfull wfull">
+            <div class="flex flex-col space-y-3">
+                <span class="font-medium text-fg-title"> On this page </span>
+                <div>
+                    <TableOfContent headings={headings} />
+                </div>
+            </div>
+            <ContribDoc fileName={fileName} contribLink={contribUrl} discussionLink={discussionLink}/>
+        </div>
+    </ScrollableY>
+</div>

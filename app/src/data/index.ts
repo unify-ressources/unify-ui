@@ -1,0 +1,2 @@
+export { sidebarItems } from "./docSidebar"
+

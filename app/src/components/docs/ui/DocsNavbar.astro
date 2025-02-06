@@ -1,0 +1,84 @@
+---
+import { githubUrl } from "@/const/index";
+import AppLogoLink from "@components/atoms/AppLogoLink.astro";
+import Container from "@components/atoms/Container.astro";
+// import PageFind from "@components/ui/PageFind.astro";
+// import ThemeDropdown from "@components/ui/ThemeSetting.astro";
+
+const navItems = [
+  {
+    text: "Docs",
+    path: "/docs/",
+  },
+  {
+    text: "Components",
+    path: "/components/",
+  },
+  {
+    text: "Blocks",
+    path: "/blocks/",
+  },
+  {
+    text: "Templates",
+    path: "/templates/",
+  }
+];
+---
+
+<header class="sticky top-0 h14 b-b b-border-high/70 flex items-center z80">
+  <span aria-hidden="true" class="blured-bg-ui"></span>
+  <Container class={"flex justify-between items-center gap-8 relative"}>
+    <AppLogoLink />
+    <div
+      data-navbar
+      class="w-full lg-wauto flex items-center flex-1 navbar-ui navbar-ui-h navbar-ui-states overflow-small-device"
+    >
+      <ul class="flex flex-col lg-flex-row gap3 md-gap4 text-fg-subtext hfull wfull text-sm">
+        {
+          navItems.map((navItem) => (
+            <li
+              class={`flex`}
+            >
+              <a
+                href={navItem.path}
+                aria-label={`Link to ${navItem.text}`}
+                class={`ease-linear duration-200 hover-text-fg-title`}
+              >
+                {navItem.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="flex items-center gap-x0.5 text-fg">
+      <a
+        href={githubUrl}
+        target="_blank"
+        aria-label="link to github UnifyPreset Repository"
+        rel="noopener noreferrer"
+        class="btn-nav-icon"
+      >
+        <span aria-hidden="true" class="flex i-fx-github"></span>
+      </a>
+      <button data-switch-theme aria-label="Switch Theme" class="btn-nav-icon">
+        <span class="i-fx-sun hidden dark-flex"></span>
+        <span class="i-fx-moon-star flex dark-hidden"></span>
+      </button>
+      <button
+        data-toggle-navbar
+        aria-label="Toggle Navbar"
+        class="flex flex-col space-y-2 rd-lg hover-bg-bg-light ease-linear duration-200 px1.5 py2.5 lg-hidden group"
+      >
+        <span
+          aria-hidden="true"
+          class="group-fx-open-rotate-45 group-fx-open-translate-y-1.5 w6 h0.5 rd-full bg-current text-fg-subtext"
+        ></span>
+        <span
+          aria-hidden="true"
+          class="group-fx-open--rotate-45 group-fx-open--translate-y-1 w6 h0.5 rd-full bg-current text-fg-subtext"
+        ></span>
+      </button>
+    </div>
+  </Container>
+</header>

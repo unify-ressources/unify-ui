@@ -1,0 +1,32 @@
+---
+type Props = {
+  label: string;
+  colors: string[];
+  id: string;
+  isDefault?: boolean;
+}
+const { label, colors, id, isDefault } = Astro.props;
+---
+
+<li class="wfull">
+  <button
+    data-palette-color
+    id={id}
+    aria-checked={isDefault ? "true" : "false"}
+    role="radio"
+    tabindex={isDefault ? "0" : "-1"}
+    style={`--palette-main-color:${colors[0]}`}
+    class="btn-palette group pb0.5"
+  >
+    <div class="grid grid-cols-3 h10 rd-md overflow-hidden bg-bg-light p0.5 wfull">
+        {
+          colors.map(color => (
+              <span style={`--palette-token: ${color};`} class={`palette-token first-rd-l last-rd-r`}></span>
+          ))
+        }
+    </div>
+    <span data-text class="text-sm">
+      {label}
+    </span>
+  </button>
+</li>

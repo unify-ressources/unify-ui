@@ -1,0 +1,29 @@
+---
+type Props = {
+  noBorderRadiusTop?: boolean;
+}
+
+const { noBorderRadiusTop } = Astro.props;
+---
+
+<div
+  data-pagefind-ignore
+  data-code-component
+  class:list={[
+    "relative group overflow-hidden max-h-full wfull grid",
+    {
+      "my4 first-mt0 last-mb0":!noBorderRadiusTop,
+      "rd-t-0":noBorderRadiusTop
+    },
+  ]}
+>
+  <figure
+    role="region"
+    aria-label="codeblock region"
+    data-hidden-scrollbar-s
+    data-overlayscrollbars-initialize
+    class="wfull flex hfull overflow-auto"
+  >
+    <pre class="wfull children-grid"><slot /></pre>
+  </figure>
+</div>

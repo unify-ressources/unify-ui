@@ -1,0 +1,44 @@
+---
+type Props = {
+  type: "update" | "note" | "warning" | "important";
+  withoutIcon?: boolean;
+}
+
+const { type, withoutIcon } = Astro.props;
+
+const getIcon = (type: "update" | "note" | "warning" | "important") => {
+  return type === "update"
+    ? "i-ph-clock-clockwise"
+    : type === "note"
+      ? "i-ph-note"
+      : type === "warning"
+        ? "i-ph-warning"
+        : type === "important"
+          ? "i-ph-call-bell"
+          : "";
+};
+---
+
+<div
+  data-alert
+  class:list={[
+    "ui-card-md flex items-start gap4 rd-lg mt4 first-mt0 b-dashed b ui-solid",
+    {
+      "ui-solid-info": type === "update",
+      "ui-solid-gray b b-border-high/40": type === "note",
+      "ui-solid-warning": type === "warning",
+      "ui-solid-dangere": type === "important",
+    },
+  ]}
+>
+  {
+    withoutIcon ? null : (
+      <div class="pt0.5">
+        <span aria-hidden="true" class={`flex ${getIcon(type)} text-2xl`} />
+      </div>
+    )
+  }
+  <div class={`flex-1`}>
+    <slot />
+  </div>
+</div>

@@ -1,0 +1,83 @@
+---
+import { sidebarItems } from "@/data/index";
+
+import GroupItem from "./GroupItem.astro";
+import SidebarGroup from "./SidebarGroup.astro";
+import ScrollableY from "./ScrollableY.astro";
+
+type Props = {
+  activeGroup: string;
+  activeItem: string;
+}
+
+const { activeGroup, activeItem } = Astro.props;
+
+const groups = [
+  {
+    name: "getting-started",
+    title: "Getting Started",
+    path: "/docs/introduction",
+    icon: "i-ph-sparkle",
+  },
+  {
+    name: "preset",
+    title: "Preset UI",
+    path: "/preset/introduction",
+    icon: "i-ph-scribble",
+  },
+  {
+    name: "components",
+    title: "Components",
+    path: "/components/accordion",
+    icon: "i-ph-diamonds-four",
+  },
+  {
+    name: "templates",
+    title: "Templates",
+    path: "/templates",
+    icon: "i-ph-airplay",
+  },
+];
+
+const getSidebarItems = (val: string) =>
+  sidebarItems.find((item) => item.name === val);
+
+const activeItems = getSidebarItems(activeGroup);
+---
+
+<aside
+  data-ui-offcanvas
+  id="doc_sidebar"
+  data-offcanvas-backdrop="u-fx-overlay bg-gray8/20 backdrop-blur-md z100 lg-hidden invisible fx-visible-visible fx-open-visible"
+  class="sidebar-size sidebar-states sidebar-position sidebar-bg z120 lg-z0  pt4 b-r b-border"
+>
+  <button
+    data-offcanvas-close
+    aria-label="Close Sidebar"
+    class="w5 h8 text-fg b b-border bg-bg-light ease-linear absolute top-1/2 -translate-y-1/2 -right-2.5 flex items-center justify-center lg-hidden rd-lg z10"
+  >
+    <span aria-hidden="true" class="flex i-ph-caret-left"></span>
+  </button>
+  <ScrollableY class="wfull py6">
+    <nav class="wfull space-y-6 relative px5 sm-px8 lg-pl0 lg-pr4 hfull">
+      <ul class="space-y-3 !text-fg">
+        {
+          groups.map((group) => (
+            <GroupItem isActive={activeGroup === group.name} {...group} />
+          ))
+        }
+      </ul>
+      {
+        activeItems
+          ? activeItems.items.map((item) => (
+              <SidebarGroup
+                label={item.label}
+                items={item.items}
+                activeItem={activeItem}
+              />
+            ))
+          : null
+      }
+    </nav>
+  </ScrollableY>
+</aside>
