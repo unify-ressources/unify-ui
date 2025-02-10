@@ -12,7 +12,6 @@
     --btn-solid-shadow-active-a: hsl(var(--c-primary-900));
     --btn-solid-shadow-active-b: hsl(var(--c-primary-700));
     --btn-solid-shadow-active-c: hsl(var(--c-primary-600));
-    
 }
 
 .btn-solid-secondary {
@@ -51,6 +50,7 @@
     --btn-solid-shadow-active-c: hsl(var(--c-success-600));
 }
 
+
 .btn-solid-danger {
     --btn-solid-bg: hsl(var(--c-danger-600));
     --btn-solid-bg-hover: hsl(var(--c-danger-700));
@@ -88,7 +88,7 @@
 }
 
 .btn-solid-white {
-    --btn-solid-bg: hsl(var(--c-c-white));
+    --btn-solid-bg: hsl(var(--c-white));
     --btn-solid-bg-hover: hsl(var(--c-gray-100));
     --btn-solid-bg-active: hsl(var(--c-gray-50));
     --btn-solid-shadow-a: hsl(var(--c-gray-300));
@@ -334,10 +334,10 @@
     --btn-solid-bg-active: hsl(var(--c-primary-700));
     --btn-solid-shadow-a: hsl(var(--c-primary-600));
     --btn-solid-shadow-b: hsl(var(--c-primary-400));
-    --btn-solid-shadow-c: hsl(var(--c-primary-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-primary-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-primary-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-primary-500));
+    --btn-solid-shadow-c: hsl(var(--c-primary-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-primary-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-primary-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-primary-400));
 }
 
 .dark .btn-solid-secondary {
@@ -346,10 +346,10 @@
     --btn-solid-bg-active: hsl(var(--c-secondary-700));
     --btn-solid-shadow-a: hsl(var(--c-secondary-600));
     --btn-solid-shadow-b: hsl(var(--c-secondary-400));
-    --btn-solid-shadow-c: hsl(var(--c-secondary-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-secondary-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-secondary-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-secondary-500));
+    --btn-solid-shadow-c: hsl(var(--c-secondary-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-secondary-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-secondary-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-secondary-400));
 }
 
 .dark .btn-solid-accent {
@@ -358,10 +358,10 @@
     --btn-solid-bg-active: hsl(var(--c-accent-700));
     --btn-solid-shadow-a: hsl(var(--c-accent-600));
     --btn-solid-shadow-b: hsl(var(--c-accent-400));
-    --btn-solid-shadow-c: hsl(var(--c-accent-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-accent-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-accent-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-accent-500));
+    --btn-solid-shadow-c: hsl(var(--c-accent-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-accent-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-accent-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-accent-400));
 }
 
 .dark .btn-solid-success {
@@ -370,10 +370,10 @@
     --btn-solid-bg-active: hsl(var(--c-success-700));
     --btn-solid-shadow-a: hsl(var(--c-success-600));
     --btn-solid-shadow-b: hsl(var(--c-success-400));
-    --btn-solid-shadow-c: hsl(var(--c-success-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-success-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-success-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-success-500));
+    --btn-solid-shadow-c: hsl(var(--c-success-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-success-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-success-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-success-400));
 }
 
 .dark .btn-solid-danger {
@@ -382,10 +382,10 @@
     --btn-solid-bg-active: hsl(var(--c-danger-700));
     --btn-solid-shadow-a: hsl(var(--c-danger-600));
     --btn-solid-shadow-b: hsl(var(--c-danger-400));
-    --btn-solid-shadow-c: hsl(var(--c-danger-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-danger-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-danger-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-danger-500));
+    --btn-solid-shadow-c: hsl(var(--c-danger-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-danger-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-danger-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-danger-400));
 }
 
 .dark .btn-solid-warning {
@@ -394,10 +394,10 @@
     --btn-solid-bg-active: hsl(var(--c-warning-700));
     --btn-solid-shadow-a: hsl(var(--c-warning-600));
     --btn-solid-shadow-b: hsl(var(--c-warning-400));
-    --btn-solid-shadow-c: hsl(var(--c-warning-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-warning-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-warning-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-warning-500));
+    --btn-solid-shadow-c: hsl(var(--c-warning-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-warning-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-warning-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-warning-400));
 }
 
 .dark .btn-solid-info {
@@ -405,12 +405,11 @@
     --btn-solid-bg-hover: hsl(var(--c-info-600));
     --btn-solid-bg-active: hsl(var(--c-info-700));
     --btn-solid-shadow-a: hsl(var(--c-info-600));
-    /* Note: The original dark info shadow-b referenced an accent value */
-    --btn-solid-shadow-b: hsl(var(--c-accent-400));
-    --btn-solid-shadow-c: hsl(var(--c-info-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-info-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-info-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-info-500));
+    --btn-solid-shadow-b: hsl(var(--c-info-400));
+    --btn-solid-shadow-c: hsl(var(--c-info-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-info-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-info-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-info-400));
 }
 
 .dark .btn-solid-white {
@@ -431,14 +430,14 @@
     --btn-solid-bg-active: hsl(var(--c-gray-700));
     --btn-solid-shadow-a: hsl(var(--c-gray-600));
     --btn-solid-shadow-b: hsl(var(--c-gray-400));
-    --btn-solid-shadow-c: hsl(var(--c-gray-300));
-    --btn-solid-shadow-active-a: hsl(var(--c-gray-800));
-    --btn-solid-shadow-active-b: hsl(var(--c-gray-600));
-    --btn-solid-shadow-active-c: hsl(var(--c-gray-500));
+    --btn-solid-shadow-c: hsl(var(--c-gray-500));
+    --btn-solid-shadow-active-a: hsl(var(--c-gray-600));
+    --btn-solid-shadow-active-b: hsl(var(--c-gray-500));
+    --btn-solid-shadow-active-c: hsl(var(--c-gray-400));
 }
 
 .dark .btn-solid-neutral {
-    --btn-solid-bg: hsl(var(--c-c-white));
+    --btn-solid-bg: hsl(var(--c-white));
     --btn-solid-bg-hover: hsl(var(--c-gray-100));
     --btn-solid-bg-active: hsl(var(--c-gray-50));
     --btn-solid-shadow-a: hsl(var(--c-gray-100));
@@ -453,57 +452,57 @@
 .dark .btn-outline-primary {
     --btn-outline-color: hsl(var(--c-primary-400));
     --btn-outline-color-hover: hsl(var(--c-primary-600));
-    --btn-outline-text-color: hsl(var(--c-primary-500));
-    --btn-outline-text-color-hover: hsl(var(--c-primary-600));
+    --btn-outline-text-color: hsl(var(--c-primary-400));
+    --btn-outline-text-color-hover: hsl(var(--c-primary-500));
 }
 
 .dark .btn-outline-secondary {
     --btn-outline-color: hsl(var(--c-secondary-400));
     --btn-outline-color-hover: hsl(var(--c-secondary-600));
-    --btn-outline-text-color: hsl(var(--c-secondary-500));
-    --btn-outline-text-color-hover: hsl(var(--c-secondary-600));
+    --btn-outline-text-color: hsl(var(--c-secondary-400));
+    --btn-outline-text-color-hover: hsl(var(--c-secondary-500));
 }
 
 .dark .btn-outline-accent {
     --btn-outline-color: hsl(var(--c-accent-400));
     --btn-outline-color-hover: hsl(var(--c-accent-600));
-    --btn-outline-text-color: hsl(var(--c-accent-500));
-    --btn-outline-text-color-hover: hsl(var(--c-accent-600));
+    --btn-outline-text-color: hsl(var(--c-accent-400));
+    --btn-outline-text-color-hover: hsl(var(--c-accent-500));
 }
 
 .dark .btn-outline-success {
     --btn-outline-color: hsl(var(--c-success-400));
     --btn-outline-color-hover: hsl(var(--c-success-600));
-    --btn-outline-text-color: hsl(var(--c-success-500));
-    --btn-outline-text-color-hover: hsl(var(--c-success-600));
+    --btn-outline-text-color: hsl(var(--c-success-400));
+    --btn-outline-text-color-hover: hsl(var(--c-success-500));
 }
 
 .dark .btn-outline-warning {
     --btn-outline-color: hsl(var(--c-warning-400));
     --btn-outline-color-hover: hsl(var(--c-warning-600));
-    --btn-outline-text-color: hsl(var(--c-warning-500));
-    --btn-outline-text-color-hover: hsl(var(--c-warning-600));
+    --btn-outline-text-color: hsl(var(--c-warning-400));
+    --btn-outline-text-color-hover: hsl(var(--c-warning-500));
 }
 
 .dark .btn-outline-info {
     --btn-outline-color: hsl(var(--c-info-400));
     --btn-outline-color-hover: hsl(var(--c-info-600));
-    --btn-outline-text-color: hsl(var(--c-info-500));
-    --btn-outline-text-color-hover: hsl(var(--c-info-600));
+    --btn-outline-text-color: hsl(var(--c-info-400));
+    --btn-outline-text-color-hover: hsl(var(--c-info-500));
 }
 
 .dark .btn-outline-danger {
     --btn-outline-color: hsl(var(--c-danger-400));
     --btn-outline-color-hover: hsl(var(--c-danger-600));
-    --btn-outline-text-color: hsl(var(--c-danger-500));
-    --btn-outline-text-color-hover: hsl(var(--c-danger-600));
+    --btn-outline-text-color: hsl(var(--c-danger-400));
+    --btn-outline-text-color-hover: hsl(var(--c-danger-500));
 }
 
 .dark .btn-outline-gray {
     --btn-outline-color: hsl(var(--c-gray-500));
-    --btn-outline-color-hover: hsl(var(--c-gray-400));
+    --btn-outline-color-hover: hsl(var(--c-gray-500));
     --btn-outline-text-color: hsl(var(--c-gray-200));
-    --btn-outline-text-color-hover: hsl(var(--c-gray-300));
+    --btn-outline-text-color-hover: hsl(var(--c-gray-500));
 }
 
 .dark .btn-outline-white {
@@ -514,8 +513,8 @@
 }
 
 .dark .btn-outline-neutral {
-    --btn-outline-color: hsl(var(--c-gray-800));
-    --btn-outline-color-hover: hsl(var(--c-gray-700));
+    --btn-outline-color: hsl(var(--c-gray-400));
+    --btn-outline-color-hover: hsl(var(--c-gray-500));
     --btn-outline-text-color: hsl(var(--c-gray-300));
     --btn-outline-text-color-hover: hsl(var(--c-gray-400));
 }
@@ -525,49 +524,49 @@
     --btn-soft-bg-color: hsl(var(--c-primary-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-primary-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-primary-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-primary-600));
+    --btn-soft-text-color: hsl(var(--c-primary-300));
 }
 
 .dark .btn-soft-secondary {
     --btn-soft-bg-color: hsl(var(--c-secondary-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-secondary-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-secondary-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-secondary-600));
+    --btn-soft-text-color: hsl(var(--c-secondary-300));
 }
 
 .dark .btn-soft-accent {
     --btn-soft-bg-color: hsl(var(--c-accent-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-accent-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-accent-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-accent-600));
+    --btn-soft-text-color: hsl(var(--c-accent-300));
 }
 
 .dark .btn-soft-success {
     --btn-soft-bg-color: hsl(var(--c-success-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-success-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-success-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-success-600));
+    --btn-soft-text-color: hsl(var(--c-success-300));
 }
 
 .dark .btn-soft-warning {
     --btn-soft-bg-color: hsl(var(--c-warning-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-warning-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-warning-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-warning-600));
+    --btn-soft-text-color: hsl(var(--c-warning-300));
 }
 
 .dark .btn-soft-info {
     --btn-soft-bg-color: hsl(var(--c-info-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-info-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-info-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-info-600));
+    --btn-soft-text-color: hsl(var(--c-info-300));
 }
 
 .dark .btn-soft-danger {
     --btn-soft-bg-color: hsl(var(--c-danger-950) / .5);
     --btn-soft-bg-color-hover: hsl(var(--c-danger-900) / .4);
     --btn-soft-bg-color-press: hsl(var(--c-danger-900) / .3);
-    --btn-soft-text-color: hsl(var(--c-danger-600));
+    --btn-soft-text-color: hsl(var(--c-danger-300));
 }
 
 .dark .btn-soft-gray {
@@ -588,43 +587,43 @@
 .dark .btn-ghost-primary {
     --btn-ghost-bg-color-hover: hsl(var(--c-primary-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-primary-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-primary-600));
+    --btn-ghost-text-color: hsl(var(--c-primary-300));
 }
 
 .dark .btn-ghost-secondary {
     --btn-ghost-bg-color-hover: hsl(var(--c-secondary-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-secondary-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-secondary-600));
+    --btn-ghost-text-color: hsl(var(--c-secondary-300));
 }
 
 .dark .btn-ghost-accent {
     --btn-ghost-bg-color-hover: hsl(var(--c-accent-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-accent-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-accent-600));
+    --btn-ghost-text-color: hsl(var(--c-accent-300));
 }
 
 .dark .btn-ghost-success {
     --btn-ghost-bg-color-hover: hsl(var(--c-success-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-success-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-success-600));
+    --btn-ghost-text-color: hsl(var(--c-success-300));
 }
 
 .dark .btn-ghost-warning {
     --btn-ghost-bg-color-hover: hsl(var(--c-warning-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-warning-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-warning-600));
+    --btn-ghost-text-color: hsl(var(--c-warning-300));
 }
 
 .dark .btn-ghost-info {
     --btn-ghost-bg-color-hover: hsl(var(--c-info-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-info-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-info-600));
+    --btn-ghost-text-color: hsl(var(--c-info-300));
 }
 
 .dark .btn-ghost-danger {
     --btn-ghost-bg-color-hover: hsl(var(--c-danger-900) / .4);
     --btn-ghost-bg-color-press: hsl(var(--c-danger-900) / .3);
-    --btn-ghost-text-color: hsl(var(--c-danger-600));
+    --btn-ghost-text-color: hsl(var(--c-danger-300));
 }
 
 .dark .btn-ghost-gray {

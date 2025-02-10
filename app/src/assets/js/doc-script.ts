@@ -1,5 +1,5 @@
 import "./tab-content-menu"
-import { Collapse, Tabs, Accordion, Modal, Dropdown, Tooltip, CustomRange, OffCanvas, AutoResizeTextArea } from "@flexilla/flexilla"
+import { Collapse, Tabs, Accordion, Modal, Dropdown, Tooltip, CustomRange, OffCanvas, AutoResizeTextArea, Popover } from "@flexilla/flexilla"
 import { $$ } from "./selector"
 
 export const initdDocsScript = () => {
@@ -21,7 +21,8 @@ export const initdDocsScript = () => {
     Dropdown.autoInit('[data-drop-down]')
 
     Tooltip.autoInit()
-    Tooltip.autoInit("[data-popover]")
+    Tooltip.autoInit("[data-tooltip]")
+    Popover.autoInit("[data-popover]")
     CustomRange.autoInit("[data-custom-range-wrapper]")
     AutoResizeTextArea.autoInit()
 }
