@@ -1,0 +1,16 @@
+---
+type Props = {
+    label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<span
+    class="text-fg-title font-medium text-sm flex items-center justify-between wfull"
+>
+    {label}
+</span>
+<div class="">
+    <slot />
+</div>

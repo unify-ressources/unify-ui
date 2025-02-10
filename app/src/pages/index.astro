@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+
+const docs = await getCollection("documentation");
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="bg-white">
+		{JSON.stringify(docs)}
+	</main>
+</Layout>

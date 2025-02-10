@@ -1,45 +1,55 @@
+@import url(./ui-colors.css);
+@import url(./ui.css);
+
 :root {
-    /* Background colors */
-    --bg-body: 255 255 255;
-    --bg-lighter: 250 250 250;
-    --bg-light: 245 245 245;
-    --bg-high: 229 229 229;
-    --bg-higher: 212 212 212;
+    --bg: var(--c-white);
+    --bg-lighter: var(--neutral-50);
+    --bg-light: var(--neutral-100);
+    --bg-high: var(--neutral-200);
+    --bg-higher: var(--neutral-300);
 
-    /* Foreground colors */
-    --fg-text: 55 65 81;
-    --fg-title: 23 23 23;
-    --fg-subtitle: 38 38 38;
-    --fg-subtext: 82 82 82;
-    --fg-light: 115 115 115;
+    --fg: var(--neutral-700);
+    --fg-subtext: var(--neutral-600);
+    --fg-title: var(--neutral-900);
+    --fg-subtitle: var(--neutral-800);
+    --border: var(--neutral-200);
 
-    /* Border colors */
-    --border: 229 229 229;
-    --border-light: 245 245 245;
-    --border-lighter: 250 250 250;
-    --border-high: 229 229 229;
-    --border-higher: 212 212 212;
+    --border-lighter: var(--neutral-50);
+    --border-light: var(--neutral-200);
+    --border-high: var(--neutral-300);
+    --border-higher: var(--neutral-400);
+
+    --ui-checkbox-bg: var(--bg);
+    --ui-checkbox-border: var(--border-high);
+    --ui-radio-bg: var(--bg);
+    --ui-radio-border: var(--border-high);
+
+    --switch-checked-thumb-primary: var(--primary-600)
+
 }
 
 .dark {
     /* Background colors */
-    --bg-body: 3 7 18;
-    --bg-lighter: 17 24 39;
-    --bg-light: 17 24 39;
-    --bg-high: 31 41 55;
-    --bg-higher: 55 65 81;
+    --bg:var(--neutral-950);
+    --bg-lighter: var(--neutral-900);
+    --bg-light: var(--neutral-900);
+    --bg-high: var(--neutral-800);
+    --bg-higher: var(--neutral-700);
 
     /* Foreground colors */
-    --fg-text: 212 212 212;
-    --fg-title: 255 255 255;
-    --fg-subtitle: 243 244 246;
-    --fg-subtext: 156 163 175;
-    --fg-light: 115 115 115;
+    --fg-text: var(--neutral-300);
+    --fg-title: var(--c-white);
+    --fg-subtitle: var(--neutral-200);
+    --fg-subtext: var(--neutral-300);
+    --fg-light: var(--neutral-400);
 
     /* Border colors */
-    --border: 17 24 39;
-    --border-light: 17 24 39;
-    --border-lighter: 17 24 39;
-    --border-high: 31 41 55;
-    --border-higher: 55 65 81;
+    --border: var(--neutral-900);
+    --border-light: var(--neutral-800);
+    --border-lighter: var(--neutral-900);
+    --border-high: var(--neutral-700);
+    --border-higher: var(--neutral-600);
+
+    --ui-checkbox-border: var(--border-light);
+
 }

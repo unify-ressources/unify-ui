@@ -1,0 +1,22 @@
+---
+import dynamic from "astro:import";
+
+type Props = {
+    name: string;
+    props?: any;
+};
+
+const { name, props = {} } = Astro.props;
+
+const toImport = `components/registry/${name}.astro`;
+const Component = await dynamic(toImport);
+---
+
+<div class="grid">
+    <div
+    data-pagefind-ignore
+    class="b b-border-high/60 rd-lg p4 md-p10 bg-bg d-flex-justify-center min-h-max mt6 first-mt0 grid"
+>
+    <Component {...props} />
+</div>
+</div>

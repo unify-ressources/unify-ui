@@ -1,0 +1,68 @@
+---
+title: Introduction
+description: The Atomic CSS UI Library
+---
+
+## What is PresetUI?
+
+PresetUI is a **custom UnoCSS preset** designed to simplify and enhance your workflow when building user interfaces. It provides a collection of **utility classes**, **base components**, **variants**, and **shortcuts** that work seamlessly with UnoCSS. PresetUI is the foundation of **UnifyUI**, enabling developers to create beautiful and functional UIs with minimal effort.
+
+
+## Concepts
+
+PresetUI is built around a few key concepts:
+
+1. **Utility-First Approach**: Instead of writing custom CSS, you can use predefined utility classes to style your components. This keeps your code clean and maintainable.
+2. **CSS Variables**: PresetUI leverages CSS variables for easy customization. You can change the look and feel of your UI by simply overriding these variables.
+3. **Shortcuts**: PresetUI includes shortcuts for common patterns, reducing the need to write repetitive classes.
+4. **Variants**: Variants allow you to apply styles conditionally (e.g., based on screen size or state) without writing additional CSS.
+
+
+## Utility Classes
+
+Preset UI comes with utility classes. These classes are applied directly to elements, allowing for granular control over your design. The library follows an Atomic and Generate On Demand approach, meaning it generates CSS only for the utilities you use. This results in a more efficient and optimized output, making your projects lighter and faster.
+
+
+## Benefits
+
+- **Consistency**: PresetUI ensures a consistent design system across your application.
+- **Efficiency**: Save time by using pre-built utility classes and shortcuts.
+- **Customization**: Easily customize styles using CSS variables.
+- **Lightweight**: PresetUI is designed to be fast and efficient, with minimal overhead.
+- **Flexibility**: Works seamlessly with UnoCSS and have a TailwindCSS Plugin.
+
+
+## Variants
+
+PresetUI includes **variants** that allow you to apply styles conditionally. For example:
+
+- **State Variants**: simplify styling based on element state (e.g., `fx-active:rotate-450`, `focus:ring`).
+- **Solid Variants :** Apply a solid style to an Element.
+- **Soft Variants :** Apply a soft style to an element.
+- **Subtle Variants :** Apply a subtle style to an element.
+- **Outline Variants :** Apply a outline style to an element.
+
+Here’s an example:
+
+<BlockCode>
+```html
+<button class="btn btn-solid btn-solid-primary btn-lg">
+  Click Me
+</button>
+<div class="ui-subtle ui-subtle-primary p3">
+Subtle UI El
+</div>
+```
+</BlockCode>
+
+## Author
+
+- [Johnkat MJ](https://github.com/Johnkat-Mj)
+
+## Credits
+
+- [UnoCSS](https://github.com/unocss/unocss)
+
+## Contributions
+
+PRs on PresetUI are always welcome, please see our [contribution guidelines](https://github.com/unify-ui-dev/unify-preset/blob/main/CONTRIBUTING.MD) to learn how you can contribute to this project.

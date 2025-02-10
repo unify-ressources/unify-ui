@@ -1,0 +1,52 @@
+---
+title: Avatar
+description: An image element for representing the user.
+---
+
+## Size
+
+<PreviewBox name="avatar/AvatarUI" >
+```html
+<div class="flex flex-wrap items-center gap-2">
+    <img src="/defaultavatar.webp" width="640" height="427" alt="avatar xs" class="avatar-xs object-cover rd-full">
+    <img src="/defaultavatar.webp" width="640" height="427" alt="avatar sm" class="avatar-sm object-cover rd-full">
+    <img src="/defaultavatar.webp" width="640" height="427" alt="avatar md" class="avatar-md object-cover rd-full">
+    <img src="/defaultavatar.webp" width="640" height="427" alt="avatar lg" class="avatar-lg object-cover rd-full">
+    <img src="/defaultavatar.webp" width="640" height="427" alt="avatar xl" class="avatar-xl object-cover rd-full">
+</div>
+```
+</PreviewBox>
+
+## PlaceHolder
+
+### With Text
+
+<PreviewBox name="avatar/AvatarPlace" >
+```html
+<div class="flex flex-wrap items-center gap-2">
+    <div class="avatar-placeholder avatar-placeholder-xs ui-subtle ui-subtle-primary rd-full p-1">JK</div>
+    <div class="avatar-placeholder avatar-placeholder-sm ui-subtle ui-subtle-gray rd-full p-1">JK</div>
+    <div class="avatar-placeholder avatar-placeholder-md ui-subtle ui-subtle-neutral rd-full p-1">JK</div>
+</div>
+```
+</PreviewBox>
+
+### With Icon
+
+<PreviewBox name="avatar/AvatarHolder" >
+```html
+<div class="flex flex-wrap items-center gap-2">
+    <div class="avatar-placeholder avatar-placeholder-xs ui-subtle ui-subtle-primary rd-full p-1">
+        <span aria-hidden="true" class="flex i-ph-user"></span>
+    </div>
+    <div class="avatar-placeholder avatar-placeholder-sm ui-subtle ui-subtle-gray rd-full p-1">
+        <span aria-hidden="true" class="flex i-ph-user"></span>
+    </div>
+    <div class="avatar-placeholder avatar-placeholder-md ui-subtle ui-subtle-neutral rd-full p-1">
+        <span aria-hidden="true" class="flex i-ph-user"></span>
+    </div>
+</div>
+```
+</PreviewBox>
+
+

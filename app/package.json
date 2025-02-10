@@ -1,0 +1,31 @@
+{
+  "name": "docs",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/vue": "^5.0.6",
+    "@flexilla/flexilla": "^2.0.9",
+    "@flexilla/utilities": "^2.0.71",
+    "astro": "^5.2.3",
+    "astro-dynamic-import": "^2.0.3",
+    "astro-font": "^1.0.0",
+    "overlayscrollbars": "^2.10.1",
+    "unocss": "^65.4.3",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.2",
+    "@julr/unocss-preset-forms": "^1.0.0",
+    "@unifydev/flexilla": "^0.0.0",
+    "@unifydev/preset-ui": "^0.1.1",
+    "shiki-transformers": "^1.0.1",
+    "shikiji-transformers": "^0.10.2"
+  }
+}

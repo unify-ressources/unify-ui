@@ -1,0 +1,10 @@
+---
+import type { HTMLAttributes } from "astro/types"
+
+type Props = HTMLAttributes<"li">
+
+const { ...rest } = Astro.props
+---
+<li class={'mt2 first-mt0'} {...rest}>
+    <slot/>
+</li>
